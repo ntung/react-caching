@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import AppNavBar from "./shared/NavBar";
+import BootstrapGridTest from "./shared/MainLayout";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <AppNavBar/>
+      <BootstrapGridTest/>
     </div>
   );
 }
