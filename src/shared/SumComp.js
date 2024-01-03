@@ -10,11 +10,17 @@ function SumComp() {
     const [txt, setTxt] = useState("Some text");
     const [a, setA] = useState(0);
     const [b, setB] = useState(0);
+
+    const sum = useMemo(() => {
+        console.log("Computing sum...");
+        return a + b;
+    }, [a, b]);
+
+
     // const sum = useMemo(() => {
-    //     console.log("Computing sum...");
-    //     return a + b;
+    //     return expensiveComputing(a, b);
     // }, [a, b]);
-    const sum = expensiveComputing(a, b);
+
     return (
         <div>
             <p>Text: <span style={{"color": colorName}}>{txt}</span></p>
