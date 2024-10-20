@@ -1,6 +1,6 @@
 import {Button, Container} from "reactstrap";
 
-function BootstrapGridTest() {
+function MainLayout() {
     return (
         <Container>
             <h1>Fluid Grid!</h1>
@@ -16,4 +16,4 @@ function BootstrapGridTest() {
     );
 }
 
-export  default BootstrapGridTest;
+export  default MainLayout;
